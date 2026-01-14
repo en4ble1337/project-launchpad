@@ -3,7 +3,7 @@
 We use a strict **3-Phase Initialization** process to prevent hallucination and ensure architectural alignment before coding begins.
 
 > [!NOTE]
-> **New here?** Check out the complete [How to Workflow Guide](https://github.com/en4ble1337/The-Genesis-System-Project-Initialization-Workflow/blob/main/how_to_workflow.md) for detailed instructions on using this system effectively.
+> Check out the complete [How to Workflow Guide](https://github.com/en4ble1337/The-Genesis-System-Project-Initialization-Workflow/blob/main/how_to_workflow.md) for detailed instructions on using this system effectively.
 
 #### Phase 1: The Product (Intent Extraction)
 > [!NOTE]
