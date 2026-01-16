@@ -16,7 +16,7 @@ function genesis {
     
     $base = "https://raw.githubusercontent.com/en4ble1337/The-Genesis-System-Project-Initialization-Workflow/main"
     
-    Invoke-WebRequest -Uri "$base/phase1.md" -OutFile "$path\01_specs.md"
+    Invoke-WebRequest -Uri "$base/phase1.md" -OutFile "$path\01_prd.md"
     Invoke-WebRequest -Uri "$base/phase2.md" -OutFile "$path\02_arch.md"
     Invoke-WebRequest -Uri "$base/phase3.md" -OutFile "$path\03_scaffold.md"
     
