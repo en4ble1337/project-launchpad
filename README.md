@@ -1,6 +1,16 @@
-### System Protocol: The Genesis Workflow
+# The Genesis System: Project Initialization Workflow
 
-We use a strict **3-Phase Initialization** process to prevent hallucination and ensure architectural alignment before coding begins.
+A structured 3-phase approach to initializing software projects with AI assistants. This workflow prevents hallucination and ensures architectural alignment before any code is written.
+
+## Why This Exists
+
+When you ask an AI to "build me an app," it often jumps straight to code, inventing requirements, picking random libraries, and creating inconsistent structures. The Genesis System forces a deliberate progression:
+
+| Phase | Role | Output | Purpose |
+|-------|------|--------|---------|
+| 1 | Product Manager | `docs/PRD.md` | Converts ambiguity into specifications |
+| 2 | Systems Architect | `docs/ARCH.md` | Converts specifications into constraints |
+| 3 | DevOps Engineer | `setup_genesis.py` | Converts constraints into reality |
 
 > [!NOTE]
 > Check out the complete [How to Workflow Guide](https://github.com/en4ble1337/The-Genesis-System-Project-Initialization-Workflow/blob/main/how_to_workflow.md) for detailed instructions on using this system effectively.
