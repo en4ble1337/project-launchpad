@@ -1,5 +1,4 @@
 
-```markdown
 # PRD Generator
 
 Create detailed Product Requirements Documents that are clear, actionable, and suitable for implementation.
@@ -250,4 +249,3 @@ Before saving the PRD:
 
 ```
 
-```
