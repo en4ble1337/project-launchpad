@@ -1,4 +1,6 @@
-![Launchpad Hero](assets/launchpad_hero.png)
+# 🚀 Launchpad
+
+![Launchpad Workflow](assets/launchpad_hero.png)
 
 **A 4-phase workflow that transforms vague ideas into hallucination-proof codebases.**
 
@@ -34,7 +36,7 @@ Launchpad is a set of AI prompts that guide you through a structured project ini
 2. **Phase 1:** Copy [phase1.md](phase1.md) → Paste into AI chat → Describe your idea → Save output as `docs/PRD.md`
 3. **Phase 2:** Copy [phase2.md](phase2.md) + your PRD → Paste into AI → Save output as `docs/ARCH.md`
 4. **Phase 3:** Copy [phase3.md](phase3.md) + PRD + ARCH → Paste into AI → Save output as `docs/RESEARCH.md`
-5. **Phase 4:** Copy [phase4.md](phase4.md) + all docs → Get `setup_genesis.py` → Run it
+5. **Phase 4:** Copy [phase4.md](phase4.md) + all docs → Get `setup_launchpad.py` → Run it
 
 **That's it.** You now have a fully scaffolded project with clear documentation.
 
@@ -95,7 +97,7 @@ The AI becomes your DevOps Engineer. It generates a Python script that creates y
 - `AGENTS.md` — the AI instruction kernel
 - First development directive
 
-**Output:** `setup_genesis.py` → Run it to scaffold your project
+**Output:** `setup_launchpad.py` → Run it to scaffold your project
 </details>
 
 ---

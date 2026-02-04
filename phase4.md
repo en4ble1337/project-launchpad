@@ -3,8 +3,9 @@
 You are initializing the project environment. The planning documents already exist:
 - `docs/PRD.md` (Product Requirements)
 - `docs/ARCH.md` (Technical Architecture)
+- `docs/RESEARCH.md` (Implementation Research)
 
-Your mission is to generate `setup_genesis.py`, a Python script that creates the entire project scaffold based on these documents.
+Your mission is to generate `setup_launchpad.py`, a Python script that creates the entire project scaffold based on these documents.
 
 ---
 
@@ -14,7 +15,7 @@ The script must:
 
 ### 1. Read Existing Documents
 ````python
-# The script reads PRD.md and ARCH.md from docs/ folder
+# The script reads PRD.md, ARCH.md, and RESEARCH.md from docs/ folder
 # It does NOT embed their content as string literals
 # This allows the documents to be edited independently
 ````
@@ -94,6 +95,7 @@ SECRET_KEY=your-secret-key-here
 
 - [Product Requirements](docs/PRD.md)
 - [Technical Architecture](docs/ARCH.md)
+- [Implementation Research](docs/RESEARCH.md)
 - [Agent Instructions](AGENTS.md)
 
 ## Project Structure
@@ -145,7 +147,8 @@ You are an Anti-Gravity Agent operating on the [Project Name] codebase.
 **Before writing ANY code:**
 1. Read `docs/PRD.md` to understand WHAT we are building
 2. Read `docs/ARCH.md` to understand HOW we structure it
-3. Check `directives/` for your current assignment
+3. Consult `docs/RESEARCH.md` for proven patterns to follow
+4. Check `directives/` for your current assignment
 
 **Core Rules:**
 - Use ONLY the technologies defined in ARCH.md Tech Stack
@@ -335,11 +338,11 @@ def check_required_dirs():
 
 def check_docs():
     """Verify planning documents exist."""
-    docs = ["docs/PRD.md", "docs/ARCH.md"]
+    docs = ["docs/PRD.md", "docs/ARCH.md", "docs/RESEARCH.md"]
     missing = [d for d in docs if not Path(d).exists()]
     if missing:
         return False, f"Missing documents: {', '.join(missing)}"
-    return True, "PRD.md and ARCH.md exist ✓"
+    return True, "PRD.md, ARCH.md, and RESEARCH.md exist ✓"
 
 def main():
     checks = [
@@ -383,7 +386,8 @@ Create `.cursorrules` (or `.windsurfrules`):
 ALWAYS read these files at the start of EVERY session:
 1. AGENTS.md (this project's conventions and workflow)
 2. docs/ARCH.md (technical architecture and constraints)
-3. directives/ (find your current task)
+3. docs/RESEARCH.md (proven patterns and anti-patterns)
+4. directives/ (find your current task)
 
 ## Code Generation Rules
 - Use ONLY technologies listed in docs/ARCH.md Tech Stack
@@ -406,8 +410,8 @@ The final `setup_genesis.py` should:
 ````python
 #!/usr/bin/env python3
 """
-Genesis Setup Script
-Creates project scaffold based on PRD.md and ARCH.md
+Launchpad Setup Script
+Creates project scaffold based on PRD.md, ARCH.md, and RESEARCH.md
 """
 
 import os
