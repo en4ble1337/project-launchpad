@@ -28,9 +28,7 @@ Launchpad is a set of AI prompts that guide you through a structured project ini
 - A project idea
 - A code editor
 
-### Choose Your Approach
-
-### Phase by Phase
+### Phase by Phase Approach
 
 Four separate sessions, maximum control.
 
@@ -119,6 +117,39 @@ The AI becomes your DevOps Engineer. It generates a Python script that creates y
 ---
 
 ## Initiate Directives
+
+After you complete all four Launchpad phases and run the generated scaffold, use [directive.md](./directive.md) to create the implementation directive backlog.
+
+This is **not** an official Launchpad phase. It is a follow-up prompt that fills a practical gap in the workflow: phases 1-4 produce the planning documents and scaffold, but they do not generate the full set of sequenced implementation directives needed for execution.
+
+### When to use it
+
+Use `directive.md` **after** you have:
+
+- `docs/PRD.md`
+- `docs/ARCH.md`
+- `docs/RESEARCH.md`
+- `AGENTS.md`
+- the scaffolded project structure from `setup_launchpad.py`
+
+### What it does
+
+`directive.md` generates the remaining directive files in `directives/` so the AI has an ordered backlog of implementation work rather than just planning documents.
+
+Typical result:
+
+- `directives/001_initial_setup.md` already exists from scaffolding
+- `directive.md` generates `directives/002_*.md` through `directives/NNN_*.md`
+
+### How to run it
+
+1. Finish phases 1-4
+2. Run `setup_launchpad.py`
+3. Copy [directive.md](./directive.md) into a fresh AI session
+4. Provide your generated planning docs and scaffold context
+5. Save the returned directive files into `directives/`
+
+Once those directives exist, move into the normal development loop below.
 
 ## After Launchpad: The Development Workflow
 
